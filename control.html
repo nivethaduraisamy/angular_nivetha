@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="D:\angular\angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.f = "hi";
+    $scope.la = "welcome";
+});
+
+</script>
+</head>
+
+<body ng-app="myApp"> 
+<div ng-controller="myCtrl">
+<form>
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+<h1>{{f}} {{firstName}} {{lastName}} {{la}}</h1>
+</form>
+</div>
+</body>
+</html>
